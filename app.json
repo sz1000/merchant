@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/today/today",
+    "pages/index/index",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#999999",
+    "selectedColor": "#5297FC",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "/static/images/shop.png",
+        "selectedIconPath": "/static/images/shop-fill.png",
+        "pagePath": "pages/today/today",
+        "text": "当日预约"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "selectedIconPath": "/static/images/user-fill.png",
+        "iconPath": "/static/images/user.png",
+        "text": "历史预约"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

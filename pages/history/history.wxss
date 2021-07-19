@@ -1,0 +1,116 @@
+.box {
+  width: 100%;
+  height: 100%;
+  
+  background-color: #f1f1f1;
+}
+
+.searchBarBox {
+   flex: 1;
+ width: 520rpx;
+  margin-left: 30rpx; 
+  background-color: #fff;
+  border-radius: 30rpx;
+  padding-left: 38rpx;
+  padding-right: 10rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  padding-top: 50rpx;
+}
+.scanIcon {
+margin: 0 30rpx;
+}
+.scan {
+  width: 64rpx;
+  height: 64rpx;
+}
+.cancelIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.searchBar {
+  width: 600rpx;
+  margin-left: 20rpx;
+}
+
+.searchBarBox image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.list {
+  margin: 30rpx;
+  background: #fff;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* font-size: 32rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-indent: 30rpx;
+  color: #777;
+  border-bottom: 2rpx solid #ccc; */
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo{
+  flex: 1;
+}
+.info{
+  flex: 1;
+}
+.img {
+  width: 100rpx;
+  height: 100rpx;
+  margin:30rpx;
+  vertical-align: middle;
+}
+.name {
+  font-size: 28rpx;
+  line-height: 48rpx;
+  font-weight: 600;
+}
+.tel {
+font-size: 24rpx;
+line-height: 32rpx;
+}
+.type{
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+.time{
+  font-size: 24rpx;
+  line-height: 32rpx;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 30rpx;
+  align-items: center;
+}
+.verification {
+  font-size: 24rpx;
+  border: 2rpx solid #333;
+  line-height: 32rpx;
+  padding: 0 30rpx;
+  border-radius: 10rpx;
+}
+.status{
+  font-size:24rpx;
+  line-height: 48rpx;
+}

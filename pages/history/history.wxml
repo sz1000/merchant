@@ -1,0 +1,44 @@
+<view class="box">
+  <view class="search">
+    <view class="searchBarBox">
+      <image class="searchIcon" mode="aspectFill" src="../../static/images/Shape@2x.png" />
+      <input class="searchBar" bindinput="getInputValue" placeholder="请输入用户名/手机号" value='{{inputValue}}' />
+      <view bindtap="cancelInput"
+        style="width:100rpx;height: 100%;display: flex;justify-content: center;align-items: center;">
+        <image wx:if="{{inputValue.length != 0}}" class="cancelIcon" mode="aspectFill"
+          src="../../static/images/system-closea@2x.png" />
+      </view>
+    </view>
+    <view class="scanIcon" bindtap="scan">
+      <image class="scan" mode="aspectFill" src="../../static/images/scan.png"></image>
+    </view>
+  </view>
+  <view>
+    <block wx:if="{{list.length>0}}">
+      <view class="list" wx:for="{{list}}" data-index="{{index}}" wx:key="index">{{item.name}}
+        <view class="item">
+          <view class="left">
+            <view class="photo">
+              <image class="img"
+                src="{{item.imgurl}}">
+              </image>
+            </view>
+            <view class="info">
+              <view class="name">{{item.cus_name}}</view>
+              <view class="tel">{{item.rec_phone}}</view>
+              <view class="type">{{item.service}}</view>
+              <view class="time">{{item.rec_reserve_time}}</view>
+            </view>
+          </view>
+          <view class="right">
+            <view class="status">预约状态：{{item.order_status}}</view>
+          </view>
+        </view>
+      </view>
+
+    </block>
+    <block wx:else>
+      <view class="item">暂无数据</view>
+    </block>
+  </view>
+</view>
